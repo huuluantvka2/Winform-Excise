@@ -34,14 +34,18 @@ namespace ExerciseWinform
         }
         private void Login()
         {
-            using (SqlCommand cmd = new SqlCommand($"SELECT TOP 1 Id FROM Employees WHERE Email='{txtUserName.Text}' AND Password='{txtPassword.Text}';", this.cnn))
+            using (SqlCommand cmd = new SqlCommand($"SELECT TOP 1 FullName FROM Employees WHERE Email='{txtUserName.Text}' AND Password='{txtPassword.Text}';", this.cnn))
             {
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
 
                     if(reader.HasRows)
                     {
-                        MessageBox.Show("Login success");
+                        Home h = new Home();
+                        reader.Read();
+                        h.lbHello.Text = "Hello " + reader["FullName"].ToString();
+                        this.Hide();
+                        h.Show();
                     }
                     else MessageBox.Show("Username or password incorrect");
                 }

@@ -20,3 +20,4 @@ C:\Users\HP\Desktop\ExerciseWinform\ExerciseWinform\obj\Debug\ExerciseWinform.cs
 C:\Users\HP\Desktop\ExerciseWinform\ExerciseWinform\obj\Debug\ExerciseWinform.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\ExerciseWinform\ExerciseWinform\obj\Debug\ExerciseWinform.exe
 C:\Users\HP\Desktop\ExerciseWinform\ExerciseWinform\obj\Debug\ExerciseWinform.pdb
+C:\Users\HP\Desktop\ExerciseWinform\ExerciseWinform\obj\Debug\ExerciseWinform.Home.resources
